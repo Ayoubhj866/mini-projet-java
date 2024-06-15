@@ -1,5 +1,7 @@
 package personne;
 
+import java.util.Random;
+
 public class Client {
 
     //conteur
@@ -11,7 +13,7 @@ public class Client {
 
     public Client (String firstName , String lastName)
     {
-        this.ID = generateId() ;
+        this.ID = new Random().nextInt(500) + 1;
         this.firstName = firstName  ;
         this.lastName = lastName ;
     }

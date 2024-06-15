@@ -20,15 +20,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
 
-
-
-
-
-
         //Part I *************************** Saisie des attributs de Magasin*****************
-        System.out.print(" 🏦    🏦    🏦     🏦    🏦     🏦 \n");
-        System.out.print("Partie II : Création d'un magasin \n");
-        System.out.print(" 🏦    🏦    🏦     🏦    🏦     🏦 \n");
+        System.out.print("🏦 Partie II : Création d'un magasin 🏦\n");
 
 
         System.out.print("Entrez le nom du magasin : ");
@@ -51,9 +44,8 @@ public class Main {
 
 
         // Parte II ********************Saisie des attributs de Client*********************
-        System.out.print(" 👤 👤 👤 👤 👤 👤 👤 👤 👤 👤 👤 👤  \n");
-        System.out.print("Partie II : Création d'un Client \n");
-        System.out.print(" 👤 👤 👤 👤 👤 👤 👤 👤 👤 👤 👤 👤  \n");
+        System.out.print("\n");
+        System.out.print(" 👤 Partie II : Création d'un Client  👤 \n");
 
 
         System.out.print("Entrez le nom du client : ");
@@ -78,9 +70,7 @@ public class Main {
 
 
         // Parte II ********************Création d'un abonnement*********************
-        System.out.print( "📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅   \n");
-        System.out.print("Partie III : Créaction d'un abonnement \n");
-        System.out.print( "📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅   \n");
+        System.out.print("📅 Partie III : Créaction d'un abonnement 📅 \n");
 
 
 
@@ -95,12 +85,15 @@ public class Main {
         }
 
 
+        System.out.print( "\n");
+        System.out.print( "\n");
+        System.out.print( "\n");
 
 
 
-        System.out.println("---------------------------------------------------------");
+        System.out.println("*************************************************************");
 
-        System.out.print(" LISTE DES MAGASIN  🏦    🏦    🏦     🏦    🏦     🏦 \n");
+        System.out.print(" 🏦 LISTE DES MAGASIN   \n");
 
         System.out.printf("%-5s %-20s %-30s%n", "ID", "Nom", "Adresse");
         System.out.printf("%-5s %-20s %-30s%n", "------------------", "--------------------", "------------------------------");
@@ -120,16 +113,22 @@ public class Main {
         for (String[] mag : magasins) {
             System.out.printf("%-5s %-20s %-30s%n", mag[0], mag[1], mag[2]);
         }
+        System.out.println("*************************************************************");
+
+
+
+        System.out.print( "\n");
+        System.out.print( "\n");
+
         System.out.println("---------------------------------------------------------");
 
 
+        System.out.print( "\n");
+        System.out.print( "\n");
 
 
-
-
-        System.out.println("---------------------------------------------------------");
-
-        System.out.print(" LISTE DES CLIENTS  🛍️    🛍️    🛍️     🛍️    🛍️     🛍️ \n");
+        System.out.println("*************************************************************");
+        System.out.print(" 👤 LISTE DES CLIENTS  \n");
 
         System.out.printf("%-5s %-20s %-20s%n", "ID", "Nom", "Prénom");
         System.out.printf("%-5s %-20s %-20s%n", "------------------", "--------------------", "--------------------");
@@ -150,11 +149,19 @@ public class Main {
             System.out.printf("%-5s %-20s %-20s%n", cl[0], cl[1], cl[2]);
         }
 
+        System.out.println("*************************************************************");
 
 
+        System.out.print( "\n");
+        System.out.print( "\n");
         System.out.println("---------------------------------------------------------");
+        System.out.print( "\n");
+        System.out.print( "\n");
 
-        System.out.print(" LISTE DES ABONNEMENTS  🎟️    🎟️    🎟️     🎟️    🎟️     🎟️ \n");
+        System.out.println("*************************************************************");
+
+
+        System.out.print(" 🎟️  LISTE DES ABONNEMENTS   \n");
 
         System.out.printf("%-20s %-20s %-10s %-10s%n", "Magasin", "Client", "Date de début", "Date de fin");
         System.out.printf("%-20s %-20s %-10s %-10s%n", "--------------------", "--------------------", "----------------", "----------------");
@@ -174,6 +181,7 @@ public class Main {
         for (String[] abonne : abonnements) {
             System.out.printf("%-20s %-20s %-10s %-10s%n", abonne[0], abonne[1], abonne[2], abonne[3]);
         }
-        System.out.println("---------------------------------------------------------");
+        System.out.println("*************************************************************");
+
     }
 }
