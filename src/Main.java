@@ -37,6 +37,8 @@ public class Main {
 
         System.out.print( "\n");
 
+
+
         // Parte II ********************Saisie des attributs de Client*********************
         System.out.print("\n");
         System.out.print(" 👤 Partie II : Création d'un Client  👤 \n");
@@ -50,7 +52,6 @@ public class Main {
         Client client = new Client(nomClient, prenomCLient);
 
         // ___________________Stockage du client dans un fichier CSV______________________________
-
         try (FileWriter writerClient = new FileWriter("clients.csv", true)) {
             writerClient.write(client.getID() + "," + nomClient + "," + prenomCLient + "\n");
         } catch (IOException e) {
@@ -66,7 +67,7 @@ public class Main {
 
         AbonnementServiceImpl abonnementService = new AbonnementServiceImpl();
 
-        // équivalent
+        // faire appel à la  méthode abonné pour crier un abonnement
         abonnementService.abonner(client, magasin);
 
         // Stockage de l'abonnement dans un fichier CSV
@@ -79,6 +80,9 @@ public class Main {
         System.out.print( "\n");
      System.out.println("*************************************************************");
         System.out.print( "\n");
+
+
+
         System.out.print(" 🏦 LISTE DES MAGASIN   \n");
         System.out.printf("%-5s %-20s %-30s%n", "ID", "Nom", "Adresse");
         System.out.printf("%-5s %-20s %-30s%n", "------------------", "--------------------", "----------------------");
@@ -94,7 +98,9 @@ public class Main {
             e.printStackTrace();
         }
 
-        // Afficher les données des magasins dans une table
+
+        //*************** Afficher les données des magasins dans une table
+
         for (String[] mag : magasins) {
             System.out.printf("%-5s %-20s %-30s%n", mag[0], mag[1], mag[2]);
         }
