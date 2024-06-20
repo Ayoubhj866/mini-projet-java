@@ -15,13 +15,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-
-
         Scanner scanner = new Scanner(System.in);
 
-
         //Part I *************************** Saisie des attributs de Magasin*****************
-        System.out.print("🏦 Partie II : Création d'un magasin 🏦\n");
+        System.out.print("🏦 Partie I : Création d'un magasin 🏦\n");
 
 
         System.out.print("Entrez le nom du magasin : ");
@@ -38,10 +35,7 @@ public class Main {
             e.printStackTrace();
         }
 
-
-
-
-
+        System.out.print( "\n");
 
         // Parte II ********************Saisie des attributs de Client*********************
         System.out.print("\n");
@@ -63,11 +57,7 @@ public class Main {
             e.printStackTrace();
         }
 
-
-
-
-
-
+        System.out.print( "\n");
 
         // Parte II ********************Création d'un abonnement*********************
         System.out.print("📅 Partie III : Créaction d'un abonnement 📅 \n");
@@ -75,6 +65,8 @@ public class Main {
 
 
         AbonnementServiceImpl abonnementService = new AbonnementServiceImpl();
+
+        // équivalent
         abonnementService.abonner(client, magasin);
 
         // Stockage de l'abonnement dans un fichier CSV
@@ -84,19 +76,12 @@ public class Main {
             e.printStackTrace();
         }
 
-
         System.out.print( "\n");
+     System.out.println("*************************************************************");
         System.out.print( "\n");
-        System.out.print( "\n");
-
-
-
-        System.out.println("*************************************************************");
-
         System.out.print(" 🏦 LISTE DES MAGASIN   \n");
-
         System.out.printf("%-5s %-20s %-30s%n", "ID", "Nom", "Adresse");
-        System.out.printf("%-5s %-20s %-30s%n", "------------------", "--------------------", "------------------------------");
+        System.out.printf("%-5s %-20s %-30s%n", "------------------", "--------------------", "----------------------");
 
         List<String[]> magasins = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader("magasins.csv"))) {
@@ -118,12 +103,7 @@ public class Main {
 
 
         System.out.print( "\n");
-        System.out.print( "\n");
-
         System.out.println("---------------------------------------------------------");
-
-
-        System.out.print( "\n");
         System.out.print( "\n");
 
 

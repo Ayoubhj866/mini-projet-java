@@ -18,7 +18,6 @@ public class AbonnementServiceImpl implements AbonnementService {
     public void abonner (Client client, Magasin magasin) {
 
 
-
         // saisir les donnée de magasin
         System.out.print("Entrez la date de début de l'abonnement (format jj/mm/aaaa) : ");
         Scanner scanner = new Scanner(System.in);

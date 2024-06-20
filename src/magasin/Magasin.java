@@ -42,8 +42,6 @@ public class Magasin {
     }
 
 
-
-
     @Override
     public String toString() {
         return "Magasin{" +
